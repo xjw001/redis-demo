@@ -15,7 +15,7 @@ public class UserServiceTest {
     private StringRedisTemplate redisTemplate;
 
     @Test
-    public void test(){
-        redisTemplate.opsForValue().set("xiongjw","1");
+    public void test() {
+        redisTemplate.opsForValue().set("xiongjw", "1");
     }
 }

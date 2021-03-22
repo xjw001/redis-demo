@@ -18,15 +18,15 @@ public class UserController {
     @GetMapping(value = "/test1")
     public String test(@RequestParam("username") String name) {
         log.info("姓名：" + name);
-        stringRedisTemplate.opsForValue().set("k1",name);
-        return "success: "+name;
+        stringRedisTemplate.opsForValue().set("k1", name);
+        return "success: " + name;
     }
 
     @GetMapping(value = "/test2")
     public String getValue(@RequestParam("username") String name) {
         log.info("姓名：" + name);
-        stringRedisTemplate.opsForValue().set("k1",name);
-        return "success: "+name;
+        stringRedisTemplate.opsForValue().set("k1", name);
+        return "success: " + name;
     }
 
 }

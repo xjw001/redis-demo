@@ -17,9 +17,9 @@ public class OrderController {
     @GetMapping(value = "/getOrderInfo")
     public Object test(@RequestParam("orderNo") String orderNo) {
         log.info("orderNo ：" + orderNo);
-        Map<String,String> map = new HashMap();
-        map.put("orderNo","JG20200918466894921646452736");
-        map.put("policyNo","gsbaodanhao0000064");
+        Map<String, String> map = new HashMap();
+        map.put("orderNo", "JG20200918466894921646452736");
+        map.put("policyNo", "gsbaodanhao0000064");
         return map;
     }
 }
